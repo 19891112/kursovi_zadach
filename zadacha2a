@@ -1,0 +1,43 @@
+package javaapplication1;
+
+import java.util.Random;
+
+public class zadachaDVEa {
+
+    public static void main(String[] args) {
+        Random rand = new Random();
+        int a = -100;
+        int b = 100;
+        int s = 0;
+        int x = 0;
+        int y = 0;
+        int masiv1[] = new int[20];
+        int masiv2[] = new int[20];
+        int masiv3[] = new int[20];
+        double c = 0;
+        for (int i = 0; i < 20; i++) {
+
+            masiv1[i] = (rand.nextInt(b - a) + a);
+            masiv2[i] = (rand.nextInt(b - a) + a);
+            masiv3[i] = (rand.nextInt(b - a) + a);
+
+            System.out.println("4islo masiv 1: " + masiv1[i]);
+            s = masiv1[i] + s;
+            System.out.println("4islo masiv 2: " + masiv2[i]);
+            x = masiv2[i] + x;
+            System.out.println("4islo masiv 3: " + masiv3[i]);
+            y = masiv3[i] + y;
+       //  
+                 c=x+s+y;
+        }
+        System.out.println("sumata na elementite na masiv 1: " +s);
+        System.out.println("sumata na elementite na masiv 2: " +x);
+        System.out.println("sumata na elementite na masiv 3: " +y);
+        System.out.println("sredno aritmeti4no  na masiv 1: " +s/20);
+        System.out.println("sredno aritmeti4no  na masiv 2: " +x/20);
+        System.out.println("sredno aritmeti4no  na masiv 3: " +y/20);
+        System.out.println("sredno aritmeti4no " + c / 60);
+       
+    }
+
+}
